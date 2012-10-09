@@ -45,15 +45,72 @@ public class TreeManagedBean {
         Category c21 = new Category();
         c21.setCategoryName("21");
         c21.setCategory(c2);
+       
+        Category c211 = new Category();
+        c211.setCategoryName( " .......... .211");
+        c211.setCategory(c21);
+       
+         categories.add(c11);
         categories.add(c1);
+        categories.add(c211);
+        categories.add(c21);
         categories.add(c2);
         categories.add(c3);
-        categories.add(c11);
-        categories.add(c21);
+       
+       
+        
+        for (Category category : categories) {
+            addNode(category);
+        }
+        
+        
+        root=new TreeNode();
+        root.setChilds(rootNodes);
+        displayNodes(root);
+    
+        
     }
+
+    public TreeNode getRoot() {
+        return root;
+    }
+
+    public void setRoot(TreeNode root) {
+        this.root = root;
+    }
+    
+    
+    
+    private void displayNodes(TreeNode node){
+        
+        System.out.println("<li id=\""+node.getText()+"\"> < a >"+node.getText()+" </a>");
+        if(node.getChilds().size()>0){
+        for (int i = 0; i < node.getChilds().size(); i++) {
+            if(i==0){
+                System.out.println("<ul>");
+            }
+            displayNodes(node.getChilds().get(i));
+            if(i==node.getChilds().size()-1){
+                System.out.println("</ul>");
+                System.out.println("</li>");
+            }
+        }
+        }else{
+            System.out.println("</li>");
+        }
+ 
+            
+        
+         
+    }
+        
 
     private void addNode(Category category) {
 
+        if(nodes.containsKey(category.getCategoryName())){
+           // return;
+        }
+        else
         if (category.getCategory() == null) {
             TreeNode node = new TreeNode();
             node.setChilds(new ArrayList<TreeNode>());
@@ -69,6 +126,7 @@ public class TreeManagedBean {
             nodes.put(category.getCategoryName(), node);
         } else {
             addNode(category.getCategory());
+            addNode(category);
         }
 
 

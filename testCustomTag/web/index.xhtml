@@ -18,11 +18,8 @@
     </h:head>
     <h:body>
         <h:form id="form">
-            <script type="text/javascript">
-                var selected=1555;
-            </script>
-       
-        <t:tree  id="tree" ms="#{treeBean.userName}">
+      
+            <t:tree   id="tree"    value="#{treeBean.root}">
             <f:ajax  listener="#{treeBean.treeSelect()}"  event="select" render="selectedLabel"/>
             <f:ajax listener="#{treeBean.treeMove()}" event="move" />
             
