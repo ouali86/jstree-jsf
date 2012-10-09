@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:t="http://docuTank.com/tree"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+         <script type="text/javascript" src="_lib/jquery.js"></script>
+        <script type="text/javascript" src="jquery.jstree.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="syntax/!style.css"/>
+        <link type="text/css" rel="stylesheet" href="!style.css"/>
+        <script type="text/javascript" src="syntax/!script.js"></script>
+        <script type="text/javascript" src="jquery.jstree.min.js"></script>
+        <script type="text/javascript" src="customtreescript.js"/>
+
+    </h:head>
+    <h:body>
+        <h:form id="form">
+            <script type="text/javascript">
+                var selected=1555;
+            </script>
+       
+        <t:tree  id="tree" ms="#{treeBean.userName}">
+            <f:ajax  listener="#{treeBean.treeSelect()}"  event="select" render="selectedLabel"/>
+            <f:ajax listener="#{treeBean.treeMove()}" event="move" />
+            
+        </t:tree>
+        
+            <h1> <h:outputText id="selectedLabel" value="#{treeBean.selected}"/> </h1>
+      
+        </h:form>
+        
+        
+        
+    </h:body>
+</html>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://78.47.79.221:8080/DocutankCentral/Central4ClientWS?wsdl" uri="src/conf/xml-resources/web-service-references/Central4ClientWS/wsdl/78.47.79.221_8080/DocutankCentral/Central4ClientWS.wsdl"/>
+    <system systemId="http://78.47.79.221:8080/DocutankCentral/Central4ClientWS?xsd=1" uri="src/conf/xml-resources/web-service-references/Central4ClientWS/wsdl/78.47.79.221_8080/DocutankCentral/Central4ClientWS.xsd_1.xsd"/>
+    <system systemId="http://78.47.79.221:8080/DocutankTank/TankWS?wsdl" uri="src/conf/xml-resources/web-service-references/TankWS/wsdl/78.47.79.221_8080/DocutankTank/TankWS.wsdl"/>
+    <system systemId="http://78.47.79.221:8080/DocutankTank/TankWS?xsd=1" uri="src/conf/xml-resources/web-service-references/TankWS/wsdl/78.47.79.221_8080/DocutankTank/TankWS.xsd_1.xsd"/>
+    <system systemId="http://78.47.79.221:8080/DocutankTank/TankWS?xsd=2" uri="src/conf/xml-resources/web-service-references/TankWS/wsdl/78.47.79.221_8080/DocutankTank/TankWS.xsd_2.xsd"/>
+</catalog>

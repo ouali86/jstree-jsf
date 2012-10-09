@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:t="http://docuTank.com/tree"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <script type="text/javascript" src="_lib/jquery.js"></script>
+        <script type="text/javascript" src="jquery.jstree.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="syntax/!style.css"/>
+        <link type="text/css" rel="stylesheet" href="!style.css"/>
+        <script type="text/javascript" src="syntax/!script.js"></script>
+        <script type="text/javascript" src="jquery.jstree.min.js"></script>
+        <script type="text/javascript" src="customtreescript.js"/>
+
+    </h:head>
+    <h:body>
+        <form id="form">
+            Hello from Facelets
+
+            <input type="button" id="create_button" value="create button"/>
+            <input type="button" id="rename_button" value="rename button"/>
+            <input type="button" id="remove_button" value="remove button"/>
+            <div id="demo1" class="demo">
+                <ul>
+                    <li id="Root node 1">
+                        <a href="#">Root node 1</a>
+                        <ul>
+                            <li id="Child node 1">
+                                <a href="#">Child node 1</a>
+                            </li>
+                            <li id="Child node 2">
+                                <a href="#">Child node 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Root node 2">
+                        <a href="#">Root node 2</a>
+                    </li>
+                </ul>
+            </div>
+
+            <script type="text/javascript" class="source">
+                $(function(){
+                    $("#demo1").jstree({ 
+                        "plugins" : [ "themes", "html_data", "dnd", "ui", "crrm" ]
+                    }).bind("move_node.jstree", function (event, data) {
+                        
+                        data.rslt.o.each(function (i) {
+                              
+                            moveTree($(this).attr("id"), data.rslt.cr === -1 ? 1 : data.rslt.np.attr("id"));
+                              
+                        });
+                        
+                      
+                    }).bind("rename.jstree", function (event, data) {
+                        
+                        rename(data.rslt.old_name, data.rslt.new_name);
+                          
+                    }).bind("create.jstree", function (event, data) {
+                        var node = data.rslt.obj;
+                        node.attr("id", data.rslt.name);
+                        node.attr("name", data.rslt.name);
+                        create(data.rslt.parent.attr("id"), data.rslt.name);
+                       
+                        
+                    }).bind("select_node.jstree", function(event, data){
+                        var selectedObj = data.rslt.obj;
+                        selectTree(selectedObj.attr("id"));
+                        
+                    }).bind("remove.jstree", function (e, data) {
+                        data.rslt.obj.each(function () {
+                            remove(this.id);
+			
+                        });
+                    });
+
+
+                    $("#create_button").click(function () { 
+                        $("#demo1").jstree("create", null, "last", { "attr" : { "rel" : "mm" } });
+                    });
+                });
+                
+                $("#rename_button").click(function () { 
+                    $("#demo1").jstree("rename");
+                    
+                });
+                $("#remove_button").click(function () { 
+                    $("#demo1").jstree("remove");
+                    
+                });
+
+            </script>
+
+        </form>
+
+
+
+    </h:body>
+</html>
+
