@@ -24,22 +24,32 @@
             <input type="button" id="rename_button" value="rename button"/>
             <input type="button" id="remove_button" value="remove button"/>
             <div id="demo1" class="demo">
+
+
+
                 <ul>
-                    <li id="Root node 1">
-                        <a href="#">Root node 1</a>
+                    <li id="1"> <a >1 </a>
                         <ul>
-                            <li id="Child node 1">
-                                <a href="#">Child node 1</a>
-                            </li>
-                            <li id="Child node 2">
-                                <a href="#">Child node 2</a>
+                            <li id="11"> <a >11 </a>
                             </li>
                         </ul>
                     </li>
-                    <li id="Root node 2">
-                        <a href="#">Root node 2</a>
+                    <li id="2"> <a >2 </a>
+                        <ul>
+                            <li id="21"> <a >21 </a>
+                                <ul>
+                                    <li id=" .......... .211"> <a > .......... .211 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="3"> <a >3 </a>
                     </li>
                 </ul>
+
+
+
             </div>
 
             <script type="text/javascript" class="source">
@@ -78,10 +88,13 @@
                     });
 
 
-                    $("#create_button").click(function () { 
+                   
+                });
+                
+                
+                 $("#create_button").click(function () { 
                         $("#demo1").jstree("create", null, "last", { "attr" : { "rel" : "mm" } });
                     });
-                });
                 
                 $("#rename_button").click(function () { 
                     $("#demo1").jstree("rename");
