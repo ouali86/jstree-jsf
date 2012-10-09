@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <title>Facelet Title</title>
+        	<script type="text/javascript" src="_lib/jquery.js"></script>
+	<script type="text/javascript" src="jquery.jstree.js"></script>
+	
+		<link type="text/css" rel="stylesheet" href="syntax/!style.css" />
+	<link type="text/css" rel="stylesheet" href="!style.css" />
+	<script type="text/javascript" src="syntax/!script.js"></script>
+
+	<script type="text/javascript" src="jquery.jstree.min.js"></script><script type="text/javascript" src="/testCustomTag/faces/javax.faces.resource/jsf.js?ln=javax.faces&amp;stage=Development"></script></head><body>
+<form id="form" name="form" method="post" action="/testCustomTag/faces/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="form" value="form" />
+
+            <script type="text/javascript">
+                var selected=1555;
+            </script>
+        Hello from Facelets
+        <div id="form:tree" >	
+            
+            <ul> <li id="phtml_1"><a href="#">Root node 1</a><ul><li id="phtml_2"><a href="#">Child node 1</a></li><li id="phtml_3"><a href="#">Child node 2</a></li></ul></li><li id="phtml_4"><a href="#">Root node 2</a></li></ul></div><script>$(function(){$("#form\\:tree").jstree({  "plugins" : [ "themes", "html_data", "dnd", "ui", "crrm" ]   }).bind("move_node.jstree", function (event, data) { data.rslt.o.each(function (i) { moveTree($(this).attr("id"), data.rslt.cr === -1 ? 1 : data.rslt.np.attr("id")); }); null }).bind("rename.jstree", function (event, data) {rename(data.rslt.old_name, data.rslt.new_name); null}).bind("create.jstree", function (event, data) { var node = data.rslt.obj; node.attr("id", data.rslt.name); node.attr("name", data.rslt.name); create(data.rslt.parent.attr("id"), data.rslt.name);null}).bind("select_node.jstree", function(event, data){var selectedObj = data.rslt.obj;selectTree(selectedObj.attr("id"));mojarra.ab('form:tree',event,'select',0,0)}).bind("remove.jstree", function (e, data) {data.rslt.obj.each(function () { remove(this.id); null}); }); $("#create_button").click(function () {  $("#form\\:tree").jstree("create", null, "last", { "attr" : { "rel" : "mm" } }); });   });$("#rename_button").click(function () { $("#form\\:tree").jstree("rename");}); $("#remove_button").click(function () {  $("#form\\:tree").jstree("remove");  });</script><input id="form:selectedHidden" type="hidden" name="form:selectedHidden" /><input type="submit" name="form:j_idt8" value="test" />&gt;
+
+     
+</form></body>
+</html>

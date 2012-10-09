@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        -->
+<project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-Central4ClientWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Central4ClientWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Central4ClientWS" destdir="${build.generated.dir}/jax-wsCache/Central4ClientWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Central4ClientWS/wsdl/78.47.79.221_8080/DocutankCentral/Central4ClientWS.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://78.47.79.221:8080/DocutankCentral/Central4ClientWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Central4ClientWS/wsdl/78.47.79.221_8080/DocutankCentral/Central4ClientWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Central4ClientWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Central4ClientWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Central4ClientWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/docutank/central/webservice/ws"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Central4ClientWS"/>
+    </target>
+    <target name="wsimport-client-TankWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TankWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TankWS" destdir="${build.generated.dir}/jax-wsCache/TankWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/TankWS/wsdl/78.47.79.221_8080/DocutankTank/TankWS.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://78.47.79.221:8080/DocutankTank/TankWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/TankWS/wsdl/78.47.79.221_8080/DocutankTank/TankWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TankWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TankWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TankWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/docutank/tank/webservice/ws"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/TankWS"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Central4ClientWS, wsimport-client-TankWS"/>
+</project>

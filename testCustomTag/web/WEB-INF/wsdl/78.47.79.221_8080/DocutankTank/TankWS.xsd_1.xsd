@@ -1,0 +1,2479 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.webservice.tank.docutank.org/" xmlns:ns1="http://ws.webservice.central.docutank.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.webservice.tank.docutank.org/">
+
+<xs:import namespace="http://ws.webservice.central.docutank.org/" schemaLocation="http://78.47.79.221:8080/DocutankTank/TankWS?xsd=2"/>
+
+<xs:element name="addNewAttributeDefinition" type="tns:addNewAttributeDefinition"/>
+
+<xs:element name="addNewAttributeDefinitionResponse" type="tns:addNewAttributeDefinitionResponse"/>
+
+<xs:element name="addNewCUser" type="tns:addNewCUser"/>
+
+<xs:element name="addNewCUserResponse" type="tns:addNewCUserResponse"/>
+
+<xs:element name="addNewCategory" type="tns:addNewCategory"/>
+
+<xs:element name="addNewCategoryResponse" type="tns:addNewCategoryResponse"/>
+
+<xs:element name="addNewCluster" type="tns:addNewCluster"/>
+
+<xs:element name="addNewClusterResponse" type="tns:addNewClusterResponse"/>
+
+<xs:element name="addNewDocument" type="tns:addNewDocument"/>
+
+<xs:element name="addNewDocumentHasItem" type="tns:addNewDocumentHasItem"/>
+
+<xs:element name="addNewDocumentHasItemResponse" type="tns:addNewDocumentHasItemResponse"/>
+
+<xs:element name="addNewDocumentNote" type="tns:addNewDocumentNote"/>
+
+<xs:element name="addNewDocumentNoteResponse" type="tns:addNewDocumentNoteResponse"/>
+
+<xs:element name="addNewDocumentResponse" type="tns:addNewDocumentResponse"/>
+
+<xs:element name="addNewItem" type="tns:addNewItem"/>
+
+<xs:element name="addNewItemResponse" type="tns:addNewItemResponse"/>
+
+<xs:element name="addNewItemVersion" type="tns:addNewItemVersion"/>
+
+<xs:element name="addNewItemVersionResponse" type="tns:addNewItemVersionResponse"/>
+
+<xs:element name="addNewLink" type="tns:addNewLink"/>
+
+<xs:element name="addNewLinkAttribute" type="tns:addNewLinkAttribute"/>
+
+<xs:element name="addNewLinkAttributeResponse" type="tns:addNewLinkAttributeResponse"/>
+
+<xs:element name="addNewLinkResponse" type="tns:addNewLinkResponse"/>
+
+<xs:element name="addNewRightsCategory" type="tns:addNewRightsCategory"/>
+
+<xs:element name="addNewRightsCategoryResponse" type="tns:addNewRightsCategoryResponse"/>
+
+<xs:element name="addNewRightsFunction" type="tns:addNewRightsFunction"/>
+
+<xs:element name="addNewRightsFunctionResponse" type="tns:addNewRightsFunctionResponse"/>
+
+<xs:element name="addNewTank" type="tns:addNewTank"/>
+
+<xs:element name="addNewTankResponse" type="tns:addNewTankResponse"/>
+
+<xs:element name="addNewTankUser" type="tns:addNewTankUser"/>
+
+<xs:element name="addNewTankUserResponse" type="tns:addNewTankUserResponse"/>
+
+<xs:element name="addNewUser" type="tns:addNewUser"/>
+
+<xs:element name="addNewUserGroup" type="tns:addNewUserGroup"/>
+
+<xs:element name="addNewUserGroupResponse" type="tns:addNewUserGroupResponse"/>
+
+<xs:element name="addNewUserResponse" type="tns:addNewUserResponse"/>
+
+<xs:element name="addRightsToUserGroup" type="tns:addRightsToUserGroup"/>
+
+<xs:element name="addRightsToUserGroupResponse" type="tns:addRightsToUserGroupResponse"/>
+
+<xs:element name="deleteAttributeDefinition" type="tns:deleteAttributeDefinition"/>
+
+<xs:element name="deleteAttributeDefinitionResponse" type="tns:deleteAttributeDefinitionResponse"/>
+
+<xs:element name="deleteCUser" type="tns:deleteCUser"/>
+
+<xs:element name="deleteCUserResponse" type="tns:deleteCUserResponse"/>
+
+<xs:element name="deleteCategory" type="tns:deleteCategory"/>
+
+<xs:element name="deleteCategoryResponse" type="tns:deleteCategoryResponse"/>
+
+<xs:element name="deleteCluster" type="tns:deleteCluster"/>
+
+<xs:element name="deleteClusterResponse" type="tns:deleteClusterResponse"/>
+
+<xs:element name="deleteDocument" type="tns:deleteDocument"/>
+
+<xs:element name="deleteDocumentHasItem" type="tns:deleteDocumentHasItem"/>
+
+<xs:element name="deleteDocumentHasItemResponse" type="tns:deleteDocumentHasItemResponse"/>
+
+<xs:element name="deleteDocumentNote" type="tns:deleteDocumentNote"/>
+
+<xs:element name="deleteDocumentNoteResponse" type="tns:deleteDocumentNoteResponse"/>
+
+<xs:element name="deleteDocumentResponse" type="tns:deleteDocumentResponse"/>
+
+<xs:element name="deleteItem" type="tns:deleteItem"/>
+
+<xs:element name="deleteItemResponse" type="tns:deleteItemResponse"/>
+
+<xs:element name="deleteItemVersion" type="tns:deleteItemVersion"/>
+
+<xs:element name="deleteItemVersionResponse" type="tns:deleteItemVersionResponse"/>
+
+<xs:element name="deleteLink" type="tns:deleteLink"/>
+
+<xs:element name="deleteLinkAttribute" type="tns:deleteLinkAttribute"/>
+
+<xs:element name="deleteLinkAttributeResponse" type="tns:deleteLinkAttributeResponse"/>
+
+<xs:element name="deleteLinkResponse" type="tns:deleteLinkResponse"/>
+
+<xs:element name="deleteRightsCategory" type="tns:deleteRightsCategory"/>
+
+<xs:element name="deleteRightsCategoryResponse" type="tns:deleteRightsCategoryResponse"/>
+
+<xs:element name="deleteRightsFunction" type="tns:deleteRightsFunction"/>
+
+<xs:element name="deleteRightsFunctionResponse" type="tns:deleteRightsFunctionResponse"/>
+
+<xs:element name="deleteTank" type="tns:deleteTank"/>
+
+<xs:element name="deleteTankResponse" type="tns:deleteTankResponse"/>
+
+<xs:element name="deleteTankUser" type="tns:deleteTankUser"/>
+
+<xs:element name="deleteTankUserResponse" type="tns:deleteTankUserResponse"/>
+
+<xs:element name="deleteUser" type="tns:deleteUser"/>
+
+<xs:element name="deleteUserGroup" type="tns:deleteUserGroup"/>
+
+<xs:element name="deleteUserGroupResponse" type="tns:deleteUserGroupResponse"/>
+
+<xs:element name="deleteUserResponse" type="tns:deleteUserResponse"/>
+
+<xs:element name="editAttributeDefinition" type="tns:editAttributeDefinition"/>
+
+<xs:element name="editAttributeDefinitionResponse" type="tns:editAttributeDefinitionResponse"/>
+
+<xs:element name="editCUser" type="tns:editCUser"/>
+
+<xs:element name="editCUserResponse" type="tns:editCUserResponse"/>
+
+<xs:element name="editCategory" type="tns:editCategory"/>
+
+<xs:element name="editCategoryResponse" type="tns:editCategoryResponse"/>
+
+<xs:element name="editCluster" type="tns:editCluster"/>
+
+<xs:element name="editClusterResponse" type="tns:editClusterResponse"/>
+
+<xs:element name="editDocument" type="tns:editDocument"/>
+
+<xs:element name="editDocumentHasItem" type="tns:editDocumentHasItem"/>
+
+<xs:element name="editDocumentHasItemResponse" type="tns:editDocumentHasItemResponse"/>
+
+<xs:element name="editDocumentNote" type="tns:editDocumentNote"/>
+
+<xs:element name="editDocumentNoteResponse" type="tns:editDocumentNoteResponse"/>
+
+<xs:element name="editDocumentResponse" type="tns:editDocumentResponse"/>
+
+<xs:element name="editItem" type="tns:editItem"/>
+
+<xs:element name="editItemResponse" type="tns:editItemResponse"/>
+
+<xs:element name="editItemVersion" type="tns:editItemVersion"/>
+
+<xs:element name="editItemVersionResponse" type="tns:editItemVersionResponse"/>
+
+<xs:element name="editLink" type="tns:editLink"/>
+
+<xs:element name="editLinkAttribute" type="tns:editLinkAttribute"/>
+
+<xs:element name="editLinkAttributeResponse" type="tns:editLinkAttributeResponse"/>
+
+<xs:element name="editLinkResponse" type="tns:editLinkResponse"/>
+
+<xs:element name="editRightsCategory" type="tns:editRightsCategory"/>
+
+<xs:element name="editRightsCategoryResponse" type="tns:editRightsCategoryResponse"/>
+
+<xs:element name="editRightsFunction" type="tns:editRightsFunction"/>
+
+<xs:element name="editRightsFunctionResponse" type="tns:editRightsFunctionResponse"/>
+
+<xs:element name="editTank" type="tns:editTank"/>
+
+<xs:element name="editTankResponse" type="tns:editTankResponse"/>
+
+<xs:element name="editTankUser" type="tns:editTankUser"/>
+
+<xs:element name="editTankUserResponse" type="tns:editTankUserResponse"/>
+
+<xs:element name="editUser" type="tns:editUser"/>
+
+<xs:element name="editUserGroup" type="tns:editUserGroup"/>
+
+<xs:element name="editUserGroupResponse" type="tns:editUserGroupResponse"/>
+
+<xs:element name="editUserResponse" type="tns:editUserResponse"/>
+
+<xs:element name="getAcceptTankUsersByLoggedUser" type="tns:getAcceptTankUsersByLoggedUser"/>
+
+<xs:element name="getAcceptTankUsersByLoggedUserResponse" type="tns:getAcceptTankUsersByLoggedUserResponse"/>
+
+<xs:element name="getAcceptTanksByLoggedUser" type="tns:getAcceptTanksByLoggedUser"/>
+
+<xs:element name="getAcceptTanksByLoggedUserResponse" type="tns:getAcceptTanksByLoggedUserResponse"/>
+
+<xs:element name="getActiveCUserById" type="tns:getActiveCUserById"/>
+
+<xs:element name="getActiveCUserByIdResponse" type="tns:getActiveCUserByIdResponse"/>
+
+<xs:element name="getActiveCUserList" type="tns:getActiveCUserList"/>
+
+<xs:element name="getActiveCUserListResponse" type="tns:getActiveCUserListResponse"/>
+
+<xs:element name="getActiveUserById" type="tns:getActiveUserById"/>
+
+<xs:element name="getActiveUserByIdResponse" type="tns:getActiveUserByIdResponse"/>
+
+<xs:element name="getActiveUserList" type="tns:getActiveUserList"/>
+
+<xs:element name="getActiveUserListResponse" type="tns:getActiveUserListResponse"/>
+
+<xs:element name="getAttributeDefinitionById" type="tns:getAttributeDefinitionById"/>
+
+<xs:element name="getAttributeDefinitionByIdResponse" type="tns:getAttributeDefinitionByIdResponse"/>
+
+<xs:element name="getAttributeDefinitionList" type="tns:getAttributeDefinitionList"/>
+
+<xs:element name="getAttributeDefinitionListResponse" type="tns:getAttributeDefinitionListResponse"/>
+
+<xs:element name="getCUserById" type="tns:getCUserById"/>
+
+<xs:element name="getCUserByIdResponse" type="tns:getCUserByIdResponse"/>
+
+<xs:element name="getCUserList" type="tns:getCUserList"/>
+
+<xs:element name="getCUserListResponse" type="tns:getCUserListResponse"/>
+
+<xs:element name="getCategoriesByUserGroupId" type="tns:getCategoriesByUserGroupId"/>
+
+<xs:element name="getCategoriesByUserGroupIdResponse" type="tns:getCategoriesByUserGroupIdResponse"/>
+
+<xs:element name="getCategoryById" type="tns:getCategoryById"/>
+
+<xs:element name="getCategoryByIdResponse" type="tns:getCategoryByIdResponse"/>
+
+<xs:element name="getCategoryIdsByUserGroupId" type="tns:getCategoryIdsByUserGroupId"/>
+
+<xs:element name="getCategoryIdsByUserGroupIdResponse" type="tns:getCategoryIdsByUserGroupIdResponse"/>
+
+<xs:element name="getCategoryList" type="tns:getCategoryList"/>
+
+<xs:element name="getCategoryListResponse" type="tns:getCategoryListResponse"/>
+
+<xs:element name="getChildrenByCategoryParentId" type="tns:getChildrenByCategoryParentId"/>
+
+<xs:element name="getChildrenByCategoryParentIdResponse" type="tns:getChildrenByCategoryParentIdResponse"/>
+
+<xs:element name="getClusterByClusterBaseUrl" type="tns:getClusterByClusterBaseUrl"/>
+
+<xs:element name="getClusterByClusterBaseUrlResponse" type="tns:getClusterByClusterBaseUrlResponse"/>
+
+<xs:element name="getClusterByClusterName" type="tns:getClusterByClusterName"/>
+
+<xs:element name="getClusterByClusterNameResponse" type="tns:getClusterByClusterNameResponse"/>
+
+<xs:element name="getClusterById" type="tns:getClusterById"/>
+
+<xs:element name="getClusterByIdResponse" type="tns:getClusterByIdResponse"/>
+
+<xs:element name="getClusterList" type="tns:getClusterList"/>
+
+<xs:element name="getClusterListResponse" type="tns:getClusterListResponse"/>
+
+<xs:element name="getCurrentActiveCUser" type="tns:getCurrentActiveCUser"/>
+
+<xs:element name="getCurrentActiveCUserResponse" type="tns:getCurrentActiveCUserResponse"/>
+
+<xs:element name="getCurrentActiveTUser" type="tns:getCurrentActiveTUser"/>
+
+<xs:element name="getCurrentActiveTUserResponse" type="tns:getCurrentActiveTUserResponse"/>
+
+<xs:element name="getDocumentById" type="tns:getDocumentById"/>
+
+<xs:element name="getDocumentByIdResponse" type="tns:getDocumentByIdResponse"/>
+
+<xs:element name="getDocumentHasItemById" type="tns:getDocumentHasItemById"/>
+
+<xs:element name="getDocumentHasItemByIdResponse" type="tns:getDocumentHasItemByIdResponse"/>
+
+<xs:element name="getDocumentHasItemList" type="tns:getDocumentHasItemList"/>
+
+<xs:element name="getDocumentHasItemListResponse" type="tns:getDocumentHasItemListResponse"/>
+
+<xs:element name="getDocumentList" type="tns:getDocumentList"/>
+
+<xs:element name="getDocumentListByCategoryId" type="tns:getDocumentListByCategoryId"/>
+
+<xs:element name="getDocumentListByCategoryIdResponse" type="tns:getDocumentListByCategoryIdResponse"/>
+
+<xs:element name="getDocumentListResponse" type="tns:getDocumentListResponse"/>
+
+<xs:element name="getDocumentNoteById" type="tns:getDocumentNoteById"/>
+
+<xs:element name="getDocumentNoteByIdResponse" type="tns:getDocumentNoteByIdResponse"/>
+
+<xs:element name="getDocumentNoteList" type="tns:getDocumentNoteList"/>
+
+<xs:element name="getDocumentNoteListByDocumentId" type="tns:getDocumentNoteListByDocumentId"/>
+
+<xs:element name="getDocumentNoteListByDocumentIdResponse" type="tns:getDocumentNoteListByDocumentIdResponse"/>
+
+<xs:element name="getDocumentNoteListResponse" type="tns:getDocumentNoteListResponse"/>
+
+<xs:element name="getItemById" type="tns:getItemById"/>
+
+<xs:element name="getItemByIdResponse" type="tns:getItemByIdResponse"/>
+
+<xs:element name="getItemList" type="tns:getItemList"/>
+
+<xs:element name="getItemListResponse" type="tns:getItemListResponse"/>
+
+<xs:element name="getItemVersionById" type="tns:getItemVersionById"/>
+
+<xs:element name="getItemVersionByIdResponse" type="tns:getItemVersionByIdResponse"/>
+
+<xs:element name="getItemVersionList" type="tns:getItemVersionList"/>
+
+<xs:element name="getItemVersionListResponse" type="tns:getItemVersionListResponse"/>
+
+<xs:element name="getItemVersionsByDocumentId" type="tns:getItemVersionsByDocumentId"/>
+
+<xs:element name="getItemVersionsByDocumentIdResponse" type="tns:getItemVersionsByDocumentIdResponse"/>
+
+<xs:element name="getLinkAttributeById" type="tns:getLinkAttributeById"/>
+
+<xs:element name="getLinkAttributeByIdResponse" type="tns:getLinkAttributeByIdResponse"/>
+
+<xs:element name="getLinkAttributeList" type="tns:getLinkAttributeList"/>
+
+<xs:element name="getLinkAttributeListResponse" type="tns:getLinkAttributeListResponse"/>
+
+<xs:element name="getLinkById" type="tns:getLinkById"/>
+
+<xs:element name="getLinkByIdResponse" type="tns:getLinkByIdResponse"/>
+
+<xs:element name="getLinkList" type="tns:getLinkList"/>
+
+<xs:element name="getLinkListByCategoryId" type="tns:getLinkListByCategoryId"/>
+
+<xs:element name="getLinkListByCategoryIdResponse" type="tns:getLinkListByCategoryIdResponse"/>
+
+<xs:element name="getLinkListByDocumentId" type="tns:getLinkListByDocumentId"/>
+
+<xs:element name="getLinkListByDocumentIdResponse" type="tns:getLinkListByDocumentIdResponse"/>
+
+<xs:element name="getLinkListResponse" type="tns:getLinkListResponse"/>
+
+<xs:element name="getNotAcceptTankUsersByLoggedUser" type="tns:getNotAcceptTankUsersByLoggedUser"/>
+
+<xs:element name="getNotAcceptTankUsersByLoggedUserResponse" type="tns:getNotAcceptTankUsersByLoggedUserResponse"/>
+
+<xs:element name="getRightIdsOfUserGroupId" type="tns:getRightIdsOfUserGroupId"/>
+
+<xs:element name="getRightIdsOfUserGroupIdResponse" type="tns:getRightIdsOfUserGroupIdResponse"/>
+
+<xs:element name="getRightsCategoryById" type="tns:getRightsCategoryById"/>
+
+<xs:element name="getRightsCategoryByIdResponse" type="tns:getRightsCategoryByIdResponse"/>
+
+<xs:element name="getRightsCategoryList" type="tns:getRightsCategoryList"/>
+
+<xs:element name="getRightsCategoryListResponse" type="tns:getRightsCategoryListResponse"/>
+
+<xs:element name="getRightsFunctionById" type="tns:getRightsFunctionById"/>
+
+<xs:element name="getRightsFunctionByIdResponse" type="tns:getRightsFunctionByIdResponse"/>
+
+<xs:element name="getRightsFunctionList" type="tns:getRightsFunctionList"/>
+
+<xs:element name="getRightsFunctionListResponse" type="tns:getRightsFunctionListResponse"/>
+
+<xs:element name="getRightsOfUserGroup" type="tns:getRightsOfUserGroup"/>
+
+<xs:element name="getRightsOfUserGroupResponse" type="tns:getRightsOfUserGroupResponse"/>
+
+<xs:element name="getTankById" type="tns:getTankById"/>
+
+<xs:element name="getTankByIdResponse" type="tns:getTankByIdResponse"/>
+
+<xs:element name="getTankByTankBaseUrl" type="tns:getTankByTankBaseUrl"/>
+
+<xs:element name="getTankByTankBaseUrlResponse" type="tns:getTankByTankBaseUrlResponse"/>
+
+<xs:element name="getTankByTankName" type="tns:getTankByTankName"/>
+
+<xs:element name="getTankByTankNameResponse" type="tns:getTankByTankNameResponse"/>
+
+<xs:element name="getTankList" type="tns:getTankList"/>
+
+<xs:element name="getTankListResponse" type="tns:getTankListResponse"/>
+
+<xs:element name="getTankUserById" type="tns:getTankUserById"/>
+
+<xs:element name="getTankUserByIdResponse" type="tns:getTankUserByIdResponse"/>
+
+<xs:element name="getTankUserByUserIdAndTankId" type="tns:getTankUserByUserIdAndTankId"/>
+
+<xs:element name="getTankUserByUserIdAndTankIdResponse" type="tns:getTankUserByUserIdAndTankIdResponse"/>
+
+<xs:element name="getTankUserList" type="tns:getTankUserList"/>
+
+<xs:element name="getTankUserListResponse" type="tns:getTankUserListResponse"/>
+
+<xs:element name="getTankUsersByLoggedUser" type="tns:getTankUsersByLoggedUser"/>
+
+<xs:element name="getTankUsersByLoggedUserResponse" type="tns:getTankUsersByLoggedUserResponse"/>
+
+<xs:element name="getTanksByLoggedUser" type="tns:getTanksByLoggedUser"/>
+
+<xs:element name="getTanksByLoggedUserResponse" type="tns:getTanksByLoggedUserResponse"/>
+
+<xs:element name="getUserById" type="tns:getUserById"/>
+
+<xs:element name="getUserByIdResponse" type="tns:getUserByIdResponse"/>
+
+<xs:element name="getUserGroupById" type="tns:getUserGroupById"/>
+
+<xs:element name="getUserGroupByIdResponse" type="tns:getUserGroupByIdResponse"/>
+
+<xs:element name="getUserGroupList" type="tns:getUserGroupList"/>
+
+<xs:element name="getUserGroupListResponse" type="tns:getUserGroupListResponse"/>
+
+<xs:element name="getUserList" type="tns:getUserList"/>
+
+<xs:element name="getUserListResponse" type="tns:getUserListResponse"/>
+
+<xs:element name="getUsersByUserGroupId" type="tns:getUsersByUserGroupId"/>
+
+<xs:element name="getUsersByUserGroupIdResponse" type="tns:getUsersByUserGroupIdResponse"/>
+
+<xs:element name="inactiveUser" type="tns:inactiveUser"/>
+
+<xs:element name="inactiveUserByCUserId" type="tns:inactiveUserByCUserId"/>
+
+<xs:element name="inactiveUserByCUserIdResponse" type="tns:inactiveUserByCUserIdResponse"/>
+
+<xs:element name="inactiveUserResponse" type="tns:inactiveUserResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="logout" type="tns:logout"/>
+
+<xs:element name="logoutResponse" type="tns:logoutResponse"/>
+
+<xs:element name="removeAllRightsOfUserGroup" type="tns:removeAllRightsOfUserGroup"/>
+
+<xs:element name="removeAllRightsOfUserGroupResponse" type="tns:removeAllRightsOfUserGroupResponse"/>
+
+<xs:element name="removeRightsOfUserGroup" type="tns:removeRightsOfUserGroup"/>
+
+<xs:element name="removeRightsOfUserGroupResponse" type="tns:removeRightsOfUserGroupResponse"/>
+
+<xs:element name="setRightIdsToUserGroupId" type="tns:setRightIdsToUserGroupId"/>
+
+<xs:element name="setRightIdsToUserGroupIdResponse" type="tns:setRightIdsToUserGroupIdResponse"/>
+
+<xs:element name="setRightsCategoriesToUserGroupId" type="tns:setRightsCategoriesToUserGroupId"/>
+
+<xs:element name="setRightsCategoriesToUserGroupIdResponse" type="tns:setRightsCategoriesToUserGroupIdResponse"/>
+
+<xs:element name="setRightsToUserGroup" type="tns:setRightsToUserGroup"/>
+
+<xs:element name="setRightsToUserGroupResponse" type="tns:setRightsToUserGroupResponse"/>
+
+<xs:element name="unlinkTankUserByUserIdAndTankId" type="tns:unlinkTankUserByUserIdAndTankId"/>
+
+<xs:element name="unlinkTankUserByUserIdAndTankIdResponse" type="tns:unlinkTankUserByUserIdAndTankIdResponse"/>
+
+<xs:complexType name="editUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="userCentralId" type="xs:int" minOccurs="0"/>
+<xs:element name="userGroupId" type="xs:int" minOccurs="0"/>
+<xs:element name="active" type="xs:boolean" minOccurs="0"/>
+<xs:element name="userSecurityCode" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tUser">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="active" type="xs:boolean" minOccurs="0"/>
+<xs:element name="createdDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="userCentralId" type="xs:int" minOccurs="0"/>
+<xs:element name="userGroup" type="tns:userGroup" minOccurs="0"/>
+<xs:element name="userSecurityCode" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="documentNotes">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="documents">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="itemVersions">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="links">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="userLogs">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="baseEntity">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="userGroup">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="rightsCategories" type="tns:rightsCategory" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="userGroupName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="rightsFunctions">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="users">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="rightsCategory">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="category" type="tns:category" minOccurs="0"/>
+<xs:element name="rightsCategoryAssignRights" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryDelete" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryModify" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryRead" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryWrite" type="xs:boolean" minOccurs="0"/>
+<xs:element name="userGroup" type="tns:userGroup" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="category">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="category" type="tns:category" minOccurs="0"/>
+<xs:element name="categoryActive" type="xs:boolean"/>
+<xs:element name="categoryLevel" type="xs:int" minOccurs="0"/>
+<xs:element name="categoryName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="attributeDefinitions">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="categories">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="links">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+<xs:attribute name="rightsCategories">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="editCluster">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int" minOccurs="0"/>
+<xs:element name="clusterName" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterBaseUrl" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterDescription" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editClusterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cluster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cluster">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="clusterBaseUrl" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterDescription" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="itemVersions">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="getChildrenByCategoryParentId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getChildrenByCategoryParentIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:category" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCluster">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteClusterResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editItemVersion">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionVersion" type="xs:int" minOccurs="0"/>
+<xs:element name="clusterId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="itemVersionSize" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionObjectName" type="xs:string" minOccurs="0"/>
+<xs:element name="itemVersionObjectType" type="tns:itemVersionObjectType" minOccurs="0"/>
+<xs:element name="itemVersionObjectOriginalName" type="xs:string" minOccurs="0"/>
+<xs:element name="container" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editItemVersionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemVersion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="itemVersion">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="cluster" type="tns:cluster" minOccurs="0"/>
+<xs:element name="container" type="xs:string" minOccurs="0"/>
+<xs:element name="documentHasItems" type="tns:documentHasItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="item" type="tns:item" minOccurs="0"/>
+<xs:element name="itemVersionObjectName" type="xs:string" minOccurs="0"/>
+<xs:element name="itemVersionObjectOriginalName" type="xs:string" minOccurs="0"/>
+<xs:element name="itemVersionObjectType" type="tns:itemVersionObjectType" minOccurs="0"/>
+<xs:element name="itemVersionSize" type="xs:int"/>
+<xs:element name="itemVersionTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="itemVersionVersion" type="xs:int"/>
+<xs:element name="user" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="documentHasItem">
+<xs:sequence>
+<xs:element name="document" type="tns:document" minOccurs="0"/>
+<xs:element name="documentHasItemTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="id" type="tns:documentHasItemId" minOccurs="0"/>
+<xs:element name="item" type="tns:item" minOccurs="0"/>
+<xs:element name="itemVersion" type="tns:itemVersion" minOccurs="0"/>
+<xs:element name="unchangableVersion" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="document">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="documentHasItems" type="tns:documentHasItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="documentName" type="xs:string" minOccurs="0"/>
+<xs:element name="links" type="tns:link" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="user" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="documentNotes">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="link">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="category" type="tns:category" minOccurs="0"/>
+<xs:element name="document" type="tns:document" minOccurs="0"/>
+<xs:element name="linkTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="user" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="linkAttributes">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="documentHasItemId">
+<xs:sequence>
+<xs:element name="documentId" type="xs:int"/>
+<xs:element name="itemId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="item">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="documentHasItems" type="tns:documentHasItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+<xs:attribute name="itemVersions">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="deleteTankUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTankUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRightsCategoriesToUserGroupId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroupId" type="xs:int" minOccurs="0"/>
+<xs:element name="rightsCategories" type="tns:rightsCategory" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRightsCategoriesToUserGroupIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentNoteListByDocumentId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentNoteListByDocumentIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentNote" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="documentNote">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="document" type="tns:document" minOccurs="0"/>
+<xs:element name="documentNoteDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="documentNoteNote" type="xs:string" minOccurs="0"/>
+<xs:element name="user" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="deleteAttributeDefinition">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAttributeDefinitionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewAttributeDefinition">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+<xs:element name="attributeDefinitionValueType" type="xs:int" minOccurs="0"/>
+<xs:element name="attributeDefinitionScript" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewAttributeDefinitionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:attributeDefinition" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="attributeDefinition">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="attributeDefinitionScript" type="xs:base64Binary" minOccurs="0"/>
+<xs:element name="attributeDefinitionValueType" type="xs:int" minOccurs="0"/>
+<xs:element name="category" type="tns:category" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="linkAttributes">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="inactiveUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="inactiveUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewCluster">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterName" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterBaseUrl" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterDescription" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewClusterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cluster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteRightsFunction">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteRightsFunctionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUserByUserIdAndTankId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="tankId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUserByUserIdAndTankIdResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemVersionsByDocumentId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemVersionsByDocumentIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemVersion" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentNoteList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentNoteListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentNote" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveCUserById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveCUserByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:cUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUserById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUserByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTank">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTankResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAttributeDefinitionList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAttributeDefinitionListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:attributeDefinition" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteRightsCategory">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteRightsCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeAllRightsOfUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroup" type="tns:userGroup" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeAllRightsOfUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="userFirstName" type="xs:string" minOccurs="0"/>
+<xs:element name="userLastName" type="xs:string" minOccurs="0"/>
+<xs:element name="userDisplayName" type="xs:string" minOccurs="0"/>
+<xs:element name="active" type="xs:boolean" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:cUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCUserList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCUserListResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:cUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoriesByUserGroupId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroupId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoriesByUserGroupIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:category" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkListByCategoryId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkListByCategoryIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:link" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editTank">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int" minOccurs="0"/>
+<xs:element name="tankName" type="xs:string" minOccurs="0"/>
+<xs:element name="tankBaseUrl" type="xs:string" minOccurs="0"/>
+<xs:element name="tankDescription" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editTankResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsOfUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroup" type="tns:userGroup" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsOfUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsFunction" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rightsFunction">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="rightsFunctionName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="userGroups">
+<xs:simpleType>
+<xs:list itemType="xs:int"/>
+</xs:simpleType>
+</xs:attribute>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="deleteItemVersion">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteItemVersionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsersByUserGroupId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsersByUserGroupIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cluster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankListResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkListByDocumentId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkListByDocumentIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:link" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editLink">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+<xs:element name="linkTime" type="xs:dateTime" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editLinkResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:link" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unlinkTankUserByUserIdAndTankId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="tankId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unlinkTankUserByUserIdAndTankIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:document" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewCategory">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryName" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryActive" type="xs:boolean" minOccurs="0"/>
+<xs:element name="categoryLevel" type="xs:int" minOccurs="0"/>
+<xs:element name="parentCategoryId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:category" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editRightsFunction">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="rightsFunctionName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editRightsFunctionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsFunction" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveCUserList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveCUserListResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:cUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:link" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editTankUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="tankId" type="xs:int" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="userSecurityCode" type="xs:string" minOccurs="0"/>
+<xs:element name="invitationFromId" type="xs:int" minOccurs="0"/>
+<xs:element name="inviteStatus" type="ns1:inviteStatus" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editTankUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cluster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewRightsCategory">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+<xs:element name="rightsCategoryRead" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryWrite" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryDelete" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryModify" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryAssignRights" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewRightsCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsCategory" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemVersionList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemVersionListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemVersion" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankByTankBaseUrl">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="tankBaseUrl" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankByTankBaseUrlResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:document" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewItem">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewItemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocumentNote">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocumentNoteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewDocumentHasItem">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentHasItemTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="unchangableVersion" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewDocumentHasItemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentHasItem" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightIdsOfUserGroupId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroup" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightIdsOfUserGroupIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editDocument">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editDocumentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:document" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteLinkAttribute">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteLinkAttributeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRightIdsToUserGroupId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroupId" type="xs:int" minOccurs="0"/>
+<xs:element name="rightIds" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRightIdsToUserGroupIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterByClusterName">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterByClusterNameResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cluster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewDocumentNote">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentNoteNote" type="xs:string" minOccurs="0"/>
+<xs:element name="documentNoteDate" type="xs:dateTime" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewDocumentNoteResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentNote" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:link" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocument">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocumentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveUserList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveUserListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentHasItemList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentHasItemListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentHasItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterByClusterBaseUrl">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="clusterBaseUrl" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClusterByClusterBaseUrlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cluster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editItem">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editItemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="sessionCodeCentral" type="xs:string" minOccurs="0"/>
+<xs:element name="userCentralId" type="xs:int" minOccurs="0"/>
+<xs:element name="userSecurityCode" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentHasItemById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentHasItemByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentHasItem" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsFunctionById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsFunctionByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsFunction" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewLinkAttribute">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="linkId" type="xs:int" minOccurs="0"/>
+<xs:element name="attributeDefinitionId" type="xs:int" minOccurs="0"/>
+<xs:element name="linkAttributeVersion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewLinkAttributeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:linkAttribute" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="linkAttribute">
+<xs:complexContent>
+<xs:extension base="tns:baseEntity">
+<xs:sequence>
+<xs:element name="attributeDefinition" type="tns:attributeDefinition" minOccurs="0"/>
+<xs:element name="link" type="tns:link" minOccurs="0"/>
+<xs:element name="linkAttributeValue" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="getCategoryById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:category" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="logout">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="logoutResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemVersionById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemVersionByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemVersion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkAttributeList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkAttributeListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:linkAttribute" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userCentralId" type="xs:int" minOccurs="0"/>
+<xs:element name="userGroupId" type="xs:int" minOccurs="0"/>
+<xs:element name="active" type="xs:boolean" minOccurs="0"/>
+<xs:element name="userSecurityCode" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryIdsByUserGroupId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroupId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryIdsByUserGroupIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editLinkAttribute">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="linkId" type="xs:int" minOccurs="0"/>
+<xs:element name="attributeDefinitionId" type="xs:int" minOccurs="0"/>
+<xs:element name="linkAttributeVersion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editLinkAttributeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:linkAttribute" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserGroupById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserGroupByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:userGroup" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewRightsFunction">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="rightsFunctionName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewRightsFunctionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsFunction" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroupName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:userGroup" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsFunctionList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsFunctionListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsFunction" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewDocument">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewDocumentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:document" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewTankUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="tankId" type="xs:int" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="userSecurityCode" type="xs:string" minOccurs="0"/>
+<xs:element name="invitationFromId" type="xs:int" minOccurs="0"/>
+<xs:element name="inviteStatus" type="ns1:inviteStatus" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewTankUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsCategoryById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsCategoryByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsCategory" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="userGroupName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:userGroup" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewItemVersion">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionVersion" type="xs:int" minOccurs="0"/>
+<xs:element name="clusterId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="itemVersionSize" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionObjectName" type="xs:string" minOccurs="0"/>
+<xs:element name="itemVersionObjectType" type="tns:itemVersionObjectType" minOccurs="0"/>
+<xs:element name="itemVersionObjectOriginalName" type="xs:string" minOccurs="0"/>
+<xs:element name="container" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewItemVersionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemVersion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:category" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editAttributeDefinition">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+<xs:element name="attributeDefinitionValueType" type="xs:int" minOccurs="0"/>
+<xs:element name="attributeDefinitionScript" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editAttributeDefinitionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:attributeDefinition" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeRightsOfUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroup" type="tns:userGroup" minOccurs="0"/>
+<xs:element name="rights" type="tns:rightsFunction" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeRightsOfUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankByTankName">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="tankName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankByTankNameResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveUserById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getActiveUserByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocumentHasItem">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocumentHasItemResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUserList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUserListResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteLink">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteLinkResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUsersByLoggedUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTankUsersByLoggedUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAcceptTanksByLoggedUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAcceptTanksByLoggedUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTanksByLoggedUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTanksByLoggedUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCUserById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCUserByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:cUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRightsToUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroup" type="tns:userGroup" minOccurs="0"/>
+<xs:element name="rights" type="tns:rightsFunction" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRightsToUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCurrentActiveCUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCurrentActiveCUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:cUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewTank">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="tankName" type="xs:string" minOccurs="0"/>
+<xs:element name="tankBaseUrl" type="xs:string" minOccurs="0"/>
+<xs:element name="tankDescription" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewTankResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tank" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editDocumentNote">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentNoteNote" type="xs:string" minOccurs="0"/>
+<xs:element name="documentNoteDate" type="xs:dateTime" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editDocumentNoteResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentNote" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCurrentActiveTUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCurrentActiveTUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNotAcceptTankUsersByLoggedUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNotAcceptTankUsersByLoggedUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserGroupList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserGroupListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:userGroup" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="inactiveUserByCUserId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="centralUserId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="inactiveUserByCUserIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentNoteById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentNoteByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentNote" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewLink">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+<xs:element name="linkTime" type="xs:dateTime" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewLinkResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:link" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addRightsToUserGroup">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="userGroup" type="tns:userGroup" minOccurs="0"/>
+<xs:element name="rights" type="tns:rightsFunction" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addRightsToUserGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCategory">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editDocumentHasItem">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="documentId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemId" type="xs:int" minOccurs="0"/>
+<xs:element name="itemVersionId" type="xs:int" minOccurs="0"/>
+<xs:element name="documentHasItemTime" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="unchangableVersion" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editDocumentHasItemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:documentHasItem" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentListByCategoryId">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDocumentListByCategoryIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:document" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAcceptTankUsersByLoggedUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAcceptTankUsersByLoggedUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:tankUser" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCategory">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="categoryName" type="xs:string" minOccurs="0"/>
+<xs:element name="categoryActive" type="xs:boolean" minOccurs="0"/>
+<xs:element name="categoryLevel" type="xs:int" minOccurs="0"/>
+<xs:element name="parentCategoryId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:category" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteItem">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteItemResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewCUser">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="userFirstName" type="xs:string" minOccurs="0"/>
+<xs:element name="userLastName" type="xs:string" minOccurs="0"/>
+<xs:element name="userDisplayName" type="xs:string" minOccurs="0"/>
+<xs:element name="active" type="xs:boolean" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewCUserResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:cUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkAttributeById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLinkAttributeByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:linkAttribute" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsCategoryList">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRightsCategoryListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsCategory" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editRightsCategory">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="categoryId" type="xs:int" minOccurs="0"/>
+<xs:element name="rightsCategoryRead" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryWrite" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryDelete" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryModify" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsCategoryAssignRights" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editRightsCategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rightsCategory" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAttributeDefinitionById">
+<xs:sequence>
+<xs:element name="sessionCodeTank" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAttributeDefinitionByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:attributeDefinition" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="itemVersionObjectType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="JPEG"/>
+<xs:enumeration value="PNG"/>
+<xs:enumeration value="GIF"/>
+<xs:enumeration value="PDF"/>
+<xs:enumeration value="DOC"/>
+<xs:enumeration value="UNKNOW"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
